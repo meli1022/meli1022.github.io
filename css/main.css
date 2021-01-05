@@ -563,9 +563,9 @@ blockquote {
   background-image: url(../img/contactgif.gif);
   background-position: center;
   background-repeat: repeat;
-  min-height: 980px;
+  min-height: 550px;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   padding-top: 100px;
 }
 

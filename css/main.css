@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Marck Script:100,300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Kulim Park:100,300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Alfa Slab One:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Sacramento:400");
 
 
 body {
@@ -24,6 +25,7 @@ a {
   margin-right: auto;
  
 }
+
 
 a:hover,
 a:focus {
@@ -49,8 +51,8 @@ blockquote {
 }
 
 .tm-section-pad-top {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .tm-content-box {
@@ -70,7 +72,7 @@ blockquote {
     font-size: 2.3rem;
     font-weight: 700;
     font-family: "Josefin Sans", sans-serif;
-    background: linear-gradient(to right,  rgb(113, 5, 113) 10%, rgb(50, 50, 50) 50%, black 60%);
+    background: linear-gradient(to right,  rgb(210, 145, 210) 10%, rgb(244, 202, 244) 50%, plum 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -100,18 +102,9 @@ blockquote {
 
 .tm-text-primary2{
   text-align: left;
-    color: #fff;
+    color: rgb(76, 0, 76);
     font-size: 92px;
-    font-weight: 700;
-    background: linear-gradient(to right,  rgb(144, 25, 199) 10%, #fff 50%, plum 60%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 1.5s linear infinite;
+    font-weight: 700
 
 }
 
@@ -283,6 +276,13 @@ blockquote {
   }
 }
 
+.intro-pic{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 .tm-hero-text-container {
   width: 100%;
   height: 100%;
@@ -358,39 +358,43 @@ blockquote {
 }
 
 .tm-section-title {
-  font-size: 2.8rem;
+  color: white ;
+  font-size: 3.8rem;
   text-align: center;
-    color: #fff;
-    font-family: "Josefin Sans", sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    background: linear-gradient(to right,  rgb(113, 5, 113) 10%, rgb(50, 50, 50) 50%, black 60%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite;
-}
+  animation: pulsate 1.5s infinite alternate;  
+  text-shadow:
+  0 0 2px plum,
+  0 0 4px plum,
+  0 0 6px plum,
+  0 0 10px #480363,
+  0 0 45px #480363,
+  0 0 55px #480363,
+  0 0 70px #480363,
+  0 0 80px #480363;
+  font-family: "Sacramento", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  }
 
 .tm-section-title2 {
+  color: white ;
+  font-size: 3.8rem;
   text-align: center;
-    color: #fff;
-    font-size: 2.8rem;
-    font-family: "Josefin Sans", sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    background: linear-gradient(to right,  rgb(207, 137, 240) 10%, #fff 50%, plum 60%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite;
+  animation: pulsate 1.5s infinite alternate;  
+  text-shadow:
+  0 0 2px plum,
+  0 0 4px plum,
+  0 0 6px plum,
+  0 0 10px #480363,
+  0 0 45px #480363,
+  0 0 55px #480363,
+  0 0 70px #480363,
+  0 0 80px #480363;
+  font-family: "Sacramento", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
 .tm-section-title3 {
@@ -412,21 +416,22 @@ blockquote {
 }
 
 .tm-section-title4 {
-    text-align: center;
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: "Josefin Sans", sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    background: linear-gradient(to right,  rgb(207, 137, 240) 10%, #fff 50%, plum 60%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite;
+  font-size: 2.8rem;
+  text-align: center;
+  animation: pulsate 1.5s infinite alternate;  
+  text-shadow:
+  0 0 7px plum,
+    0 0 10px plum,
+    0 0 21px plum,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+  font-family: "Sacramento", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
 
@@ -451,7 +456,6 @@ blockquote {
   font-size: 1.2rem;
   text-align:center;
   color: grey;
-  padding-bottom: 20px;
 
 }
 
@@ -479,8 +483,16 @@ blockquote {
 
 @media (max-width: 10000px) {
   #Projects {
-    background-color: plum;
+    border: 0.2rem solid plum;
+  box-shadow: 0 0 .2rem plum,
+            0 0 .2rem plum,
+            0 0 2rem #480363,
+            0 0 0.8rem #480363,
+            0 0 2.8rem #480363,
+            inset 0 0 1.3rem #480363; 
+    background-image: url(/img/gradient\ back.png);
     width: 100%
+    
   }
 }
 
@@ -498,11 +510,19 @@ blockquote {
   text-align:center;
   color: white;
   padding-top: 20px;
+  text-size-adjust: auto;
 }
 
 
 /* Experience */
 #Experience {
+  border: 0.2rem solid plum;
+  box-shadow: 0 0 .2rem plum,
+            0 0 .2rem plum,
+            0 0 2rem #480363,
+            0 0 0.8rem #480363,
+            0 0 2.8rem #480363,
+            inset 0 0 1.3rem #480363; 
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -545,7 +565,7 @@ blockquote {
   font-family: "Alfa Slab One" ;
   color: black;
   padding-top: 10px;
-  background: linear-gradient(to right,  rgb(113, 5, 113) 10%, rgb(50, 50, 50) 50%, black 60%);
+  background: linear-gradient(to right, rgb(210, 145, 210) 10%, rgb(244, 202, 244) 50%, plum 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -670,32 +690,64 @@ p {
 @media (min-width: 200px) {
   .tm-intro-text-container {
     padding-top: 20px;
-    padding-bottom: 40px;
     margin-left: 100px;
     margin-right: 100px;
     
     /*background-image: url(../img/newsplash.gif);
     border: 10px solid #ff0054;*/
-    
-   
   }
 
   .tm-intro-text-container-2 {
     background-color:black;
+    background-image: url(../img/element\ background.png);
+    background-repeat: no-repeat;
   padding: 2.5rem 1.3rem;
+  border: 0.2rem solid #fff;
   border-radius: 2rem;
-  margin-bottom: 3rem;
-  box-shadow: 5px 5px 10px 1px  rgb(144, 25, 199);
-    
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #480363,
+            0 0 0.8rem #480363,
+            0 0 2.8rem #480363,
+            inset 0 0 1.3rem #480363; 
+  animation-duration: 3s;
+  animation-name: bounce2; 
+  animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce2 {
+    10%, 30%, 50%, 80%, 100% {
+      transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-10px);}
+  }
+
+  @keyframes fade-in {
+    from { 
+      opacity: 0; 
+    }
+  
+    to {
+      opacity: 1; 
+    }
   }
 
   .tm-intro-text-container-3 {
-    color: black;
-  background-color: plum;
+    color: plum;
+    background-repeat: no-repeat;
+  background-color: rgb(70, 13, 54);
   padding: 2.5rem 1.3rem;
+  border: 0.2rem solid rgb(255, 255, 255);
   border-radius: 2rem;
-  margin-bottom: 3rem;
-  box-shadow: 5px 5px 10px 1px   rgb(113, 5, 113);
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem rgb(106, 7, 106),
+            0 0 0.8rem rgb(106, 7, 106),
+            0 0 0.8rem rgb(106, 7, 106),
+            inset 0 0 1.3rem rgb(106, 7, 106); 
+  animation-duration: 3s;
+  animation-name: bounce2; 
+  animation-iteration-count: infinite;
     
   }
 

@@ -491,6 +491,7 @@ blockquote {
             0 0 2.8rem #480363,
             inset 0 0 1.3rem #480363; 
     background-image: url(/img/gradient\ back.png);
+    background-repeat: no-repeat;
     width: 100%
     
   }

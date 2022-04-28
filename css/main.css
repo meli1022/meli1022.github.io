@@ -45,19 +45,19 @@ a:focus {
   background-color: #ced4da;
 }
 
-blockquote {
-  font-size: 0.86em;
-  line-height: 1.8em;
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
 }
 
 .tm-section-pad-top {
-  padding-top: 10px;
+  padding-top: 35px;
   padding-bottom: 10px;
 }
 
 .tm-content-box {
   padding-top: 20px;
-  padding-bottom: 40px;
   
 }
 
@@ -109,20 +109,13 @@ blockquote {
 }
 
 
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
 .tm-font-big {
   font-size: 1.25rem;
 }
 
 .tm-btn-primary {
   color: white;
-  background-color:black;
+  background-color:rgb(144, 25, 199);;
   border-radius: 35px;
   padding: 14px 30px;
   margin-left: auto;
@@ -145,7 +138,7 @@ blockquote {
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
   color: white;
-  background-color: rgb(144, 25, 199);
+  background-color: plum;
   box-shadow: inset 0 0 2px 0 rgba(255,255,255,.4), 
   inset 0 0 3px 0 rgba(0,0,0,.4),
   inset 0 0 3px 5px rgba(0,0,0,.05), 2px 2px 4px 0 rgba(0,0,0,.25);
@@ -159,6 +152,7 @@ blockquote {
   inset 0 0 3px 0 rgba(0,0,0,.4),
   inset 0 0 3px 5px rgba(0,0,0,.05), 2px 2px 4px 0 rgba(0,0,0,.25);
 }
+
 /* Navbar */
 
 .tm-navbar {
@@ -182,7 +176,7 @@ blockquote {
 }
 
 .navbar-brand:hover{
-  color: rgb(144, 25, 199);
+  color: plum;
 }
 .tm-navbar.scroll .navbar-brand:hover {
   color: white;
@@ -190,7 +184,7 @@ blockquote {
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: rgb(144, 25, 199);
+  color: plum;
 }
 
 .nav-item {
@@ -226,14 +220,14 @@ blockquote {
 }
 
 .tm-navbar.scroll .navbar-toggler {
-  border: 1px solid rgb(144, 25, 199);
+  border: 1px solid plum;
 }
 
 .tm-navbar.scroll .navbar-toggler-icon {
-  color:   rgb(144, 25, 199);
+  color:   plum;
 }
 
-/* Hero */
+/* Home */
 
 #Home {
 	background-color:black;
@@ -283,7 +277,7 @@ blockquote {
   margin-right: auto;
   
 }
-.tm-hero-text-container {
+.tm-home-text-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -291,11 +285,11 @@ blockquote {
   justify-content: center;
 }
 
-.tm-hero-text-container-inner {
+.tm-home-text-container-inner {
   margin-top: -90px;
 }
 
-.tm-hero-title {
+.tm-home-title {
   font-family: "Marck Script", sans-serif;
   color: white;
   font-size: 6rem;
@@ -303,7 +297,7 @@ blockquote {
   text-align:center;
 }
 
-.tm-hero-subtitle {
+.tm-home-subtitle {
   font-family: "Kulim Park";
   color: plum;
   font-size: 1.5rem;
@@ -319,7 +313,7 @@ blockquote {
 }
 
 @media (max-height: 480px) {
-  .tm-hero-text-container-inner {
+  .tm-home-text-container-inner {
     margin-top: -40px;
   
   }
@@ -348,13 +342,6 @@ blockquote {
   color: #FFF;
   background: black;
   padding: 20px 50px;
-}
-
-/* Introduction */
-
-#introduction {
-  padding-bottom: 100px;
-  
 }
 
 .tm-section-title {
@@ -446,10 +433,13 @@ blockquote {
 .tm-continue {
   padding: 20px 0 30px 0;
   text-align: center;
+  justify-content: flex-end;
+  display: flex;
 }
 
 #WhoIAm {
-  background-color:black;
+  background-color:rgb(19, 1, 18);
+  padding-bottom: 20px;
 }
 
 .tm-intro-text6 { /*who am i descripton*/
@@ -458,8 +448,6 @@ blockquote {
   color: grey;
 
 }
-
-
 
 .skill-mf span {
   color: grey;
@@ -483,14 +471,8 @@ blockquote {
 
 @media (max-width: 10000px) {
   #Projects {
-    border: 0.2rem solid plum;
-  box-shadow: 0 0 .2rem plum,
-            0 0 .2rem plum,
-            0 0 2rem #480363,
-            0 0 0.8rem #480363,
-            0 0 2.8rem #480363,
-            inset 0 0 1.3rem #480363; 
-    background-image: url(/img/gradient\ back.png);
+    padding-bottom: 40px; 
+    background-image: url(../img/contactgif.gif);
     background-repeat: no-repeat;
     width: 100%
     
@@ -514,22 +496,73 @@ blockquote {
   text-size-adjust: auto;
 }
 
+/* Acheivements */
 
-/* Experience */
-#Experience {
+.gall-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: plum;
+}
+@media (min-width: 200px) {
+  .gall-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    padding-bottom: 40px;
+    
+  }
+  }
+.gallery-item{
+  position: relative;
+  width: 100%;
   border: 0.2rem solid plum;
   box-shadow: 0 0 .2rem plum,
             0 0 .2rem plum,
-            0 0 2rem #480363,
+            0 0 1rem #480363,
             0 0 0.8rem #480363,
-            0 0 2.8rem #480363,
+            0 0 1.2rem #480363,
             inset 0 0 1.3rem #480363; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: black;
+ 
+}
+
+.gallery-item:hover .gall-overlay {
+  opacity: 85%;
+}
+
+.gall-text {
   position: relative;
-  padding-top: 40px;
+  color: black;
+  font-weight: 550;
+  font-family: "Josefin Sans", sans-serif;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.gall-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Experience */
+#Experience {
+  padding-bottom: 40px;
+  background-image: url(../img/contactgif.gif);
+  background-repeat: no-repeat;
+  width: 100%
 }
 
 .project-img{
@@ -580,14 +613,13 @@ blockquote {
 
 #contact {
   color: white;
-  background-color:plum;
-  background-image: url(../img/contactgif.gif);
+  background-color:rgb(19, 1, 18);
+  /*background-image: url(../img/contactgif.gif);*/
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   min-height: 550px;
   position: relative;
   padding-bottom: 100px;
-  padding-top: 100px;
 }
 
 .tm-intro-text6 { /*box descripton*/
@@ -613,49 +645,7 @@ blockquote {
 
 .item-link:hover i,
 .item-link:hover span {
-  color:rgb(144, 25, 199);
-}
-
-.tm-input {
-	margin: 0 0 20px 0;
-	width: 90%;
-  padding: 8px 20px;
-  border-radius: 6px;
-  border: 1px solid white;
-  background: transparent;
-  color:white;
-}
-
-.tm-btn-submit {
-	font-size: 0.9em;
-	color: white;
-	background-color:plum;
-	width: 50%;
-  margin-bottom: 60px;
-  box-shadow: inset 0 0 2px 0 rgba(255,255,255,.4), 
-  inset 0 0 3px 0 rgba(0,0,0,.4),
-  inset 0 0 3px 5px rgba(0,0,0,.05), 2px 2px 4px 0 rgba(0,0,0,.25);
-}
-
-.tm-btn-submit:hover {
-	color: #fff;
-	background-color:  rgb(144, 25, 199);
-}
-
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: white;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: white;
+  color:plum;
 }
 
 .tm-footer {
@@ -700,7 +690,9 @@ p {
 
   .tm-intro-text-container-2 {
     background-color:black;
-    background-image: url(../img/element\ background.png);
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
     background-repeat: no-repeat;
   padding: 2.5rem 1.3rem;
   border: 0.2rem solid #fff;
@@ -734,18 +726,21 @@ p {
   }
 
   .tm-intro-text-container-3 {
-    color: plum;
+    color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    background-color:black;
     background-repeat: no-repeat;
-  background-color: rgb(70, 13, 54);
   padding: 2.5rem 1.3rem;
-  border: 0.2rem solid rgb(255, 255, 255);
+  border: 0.2rem solid #fff;
   border-radius: 2rem;
   box-shadow: 0 0 .2rem #fff,
             0 0 .2rem #fff,
-            0 0 2rem rgb(106, 7, 106),
-            0 0 0.8rem rgb(106, 7, 106),
-            0 0 0.8rem rgb(106, 7, 106),
-            inset 0 0 1.3rem rgb(106, 7, 106); 
+            0 0 2rem #480363,
+            0 0 0.8rem #480363,
+            0 0 2.8rem #480363,
+            inset 0 0 1.3rem #480363; 
   animation-duration: 3s;
   animation-name: bounce2; 
   animation-iteration-count: infinite;
@@ -763,11 +758,7 @@ p {
     max-width: 1275px;
     
   }
-
-  .tm-container-gallery {
-    max-width: 1290px;
-  }
-
+ 
   .tm-container-contact {
     max-width: 1063px;
   }
@@ -786,11 +777,6 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .tm-btn-submit {
-    margin-left: 0;
-    margin-top: 20px;
   }
 }
 
@@ -811,25 +797,4 @@ p {
     color: white;
 	padding-right: 20px;
   }
-}
-
-@media (max-width: 480px) {
-  .tm-gallery-container {
-    max-width: 220px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .tm-gallery-container-2 {
-    max-width: 350px;
-  }
-
-  .slick-dots li {
-    margin: 0 8px;
-  }
-
-  .tm-gallery-item {
-    margin: 0;
-  }
-
 }

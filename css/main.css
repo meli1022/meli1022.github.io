@@ -468,8 +468,6 @@ a:focus {
   background-color: rgb(144, 25, 199);
 
 }
-
-@media (max-width: 10000px) {
   #Projects {
     padding-bottom: 40px; 
     background-image: url(../img/contactgif.gif);
@@ -477,9 +475,6 @@ a:focus {
     width: 100%
     
   }
-}
-
-
 
 .tm-intro-text3 { /*project descripton*/
   font-size: 1.2rem;

@@ -62,9 +62,10 @@ a:focus {
 }
 
 .tm-content-box2 {  
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 
 .tm-text-primary {
   text-align: center;
@@ -72,16 +73,14 @@ a:focus {
     font-size: 2.3rem;
     font-weight: 700;
     font-family: "Josefin Sans", sans-serif;
-    background: linear-gradient(to right,  rgb(210, 145, 210) 10%, rgb(244, 202, 244) 50%, plum 60%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
+   
     color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite;
+   
+    
+    
 }
+
+
 
 .tm-text-primary3 {
   text-align: center;
@@ -527,6 +526,7 @@ a:focus {
  
 }
 
+
 .gallery-item:hover .gall-overlay {
   opacity: 85%;
 }
@@ -553,6 +553,149 @@ a:focus {
 
 
 /* Experiences */
+
+
+@media (min-width: 1200px) {
+  .ex-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+  
+  }
+  }
+ 
+.extextcontainer {
+  
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+  
+    
+}
+
+.extextcontainer .excontent {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.9); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ex-item1{
+  position: relative;
+  width: 100%;
+  border: 0.2rem solid plum;
+  box-shadow: 0 0 .2rem plum,
+            0 0 .2rem plum,
+            0 0 1rem #480363,
+            0 0 0.8rem #480363,
+            0 0 1.2rem #480363,
+            inset 0 0 1.3rem #480363; 
+ 
+}
+
+.ex-item2{
+  position: relative;
+  width: 100%;
+  border: 0.2rem solid plum;
+  box-shadow: 0 0 .2rem plum,
+            0 0 .2rem plum,
+            0 0 1rem #480363,
+            0 0 0.8rem #480363,
+            0 0 1.2rem #480363,
+            inset 0 0 1.3rem #480363; 
+ 
+}
+
+.ex-item3{
+  position: relative;
+  width: 100%;
+  border: 0.2rem solid plum;
+  box-shadow: 0 0 .2rem plum,
+            0 0 .2rem plum,
+            0 0 1rem #480363,
+            0 0 0.8rem #480363,
+            0 0 1.2rem #480363,
+            inset 0 0 1.3rem #480363; 
+ 
+}
+
+.ex-overlay1{
+
+  overflow: auto;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(12, 117, 174);
+  color: black;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.ex-item1:hover .ex-overlay1 {
+  opacity: 100%;
+}
+
+.ex-overlay2{
+
+  overflow: auto;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.ex-item2:hover .ex-overlay2 {
+  opacity: 100%;
+}
+
+.ex-overlay3{
+
+  overflow: auto;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(243, 169, 5);
+  color: black;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.ex-item3:hover .ex-overlay3 {
+  opacity: 100%;
+}
+
+
+
 #Experiences {
   padding-bottom: 40px;
   background-image: url(../img/contactgif.gif);
@@ -593,7 +736,7 @@ a:focus {
   text-align:center;
   font-family: "Alfa Slab One" ;
   color: black;
-  padding-top: 10px;
+  white-space: nowrap;
   background: linear-gradient(to right, rgb(210, 145, 210) 10%, rgb(244, 202, 244) 50%, plum 60%);
     background-size: auto auto;
     background-clip: border-box;
@@ -612,19 +755,37 @@ a:focus {
   /*background-image: url(../img/contactgif.gif);*/
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 550px;
+  min-height: 250px;
   position: relative;
-  padding-bottom: 100px;
 }
+
+
 
 .tm-intro-text6 { /*box descripton*/
   font-size: 1.2rem;
   text-align:center;
   color: white;
 }
-.contact-item {
-  margin-left: 20px;
+.contact-item1 {
   margin-bottom: 50px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  padding-right: 20px;
+  
+}
+.contact-item2 {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.mailicon{
+  color:rgb(144, 25, 199)
+}
+.mailiconi{
+  color:white
 }
 
 .item-link {
@@ -634,7 +795,7 @@ a:focus {
 
 .item-link i,
 .item-link span {
-  color:white;
+  
   transition: all 0.3s ease;
 }
 
@@ -644,11 +805,11 @@ a:focus {
 }
 
 .tm-footer {
-  position: absolute;
+  position: relative;
   bottom: 35px;
   left: 0;
   right: 0;
-  padding: 0 15px;
+  padding-top: 20px;
 }
 
 .tm-footer a {
@@ -727,7 +888,7 @@ p {
     display: flex;
     background-color:black;
     background-repeat: no-repeat;
-  padding: 2.5rem 1.3rem;
+  padding: 1rem;
   border: 0.2rem solid #fff;
   border-radius: 2rem;
   box-shadow: 0 0 .2rem #fff,
@@ -739,6 +900,7 @@ p {
   animation-duration: 3s;
   animation-name: bounce2; 
   animation-iteration-count: infinite;
+  
     
   }
 

@@ -638,7 +638,7 @@ a:focus {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgb(12, 117, 174);
+  background-color: plum;
   color: black;
   font-weight: 500;
   font-family: "Josefin Sans", sans-serif;
@@ -661,7 +661,7 @@ a:focus {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: white;
+  background-color: plum;
   color: black;
   font-weight: 500;
   font-family: "Josefin Sans", sans-serif;
@@ -684,7 +684,7 @@ a:focus {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgb(243, 169, 5);
+  background-color: plum;
   color: black;
   font-weight: 500;
   font-family: "Josefin Sans", sans-serif;

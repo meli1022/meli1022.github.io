@@ -35,9 +35,6 @@
               <a class="nav-link tm-nav-link" href="Projects.html">Projects</a>
           </li>
          
-          <li class="nav-item">
-            <a class="nav-link tm-nav-link" href="PMStarterKit.html">PM Starter Kit</a>
-        </li>
             </ul>
           </div>        
         </div>
@@ -51,20 +48,20 @@
             <div class="projects-container" >
               <div class="tabbable" id="tabs-181583" >
                 <div class="container" style="text-align: center;">
-                <ul class="nav nav-tabs" style="display: inline-flex;">
-                  <li class="nav-item">
-                    <a class="nav-tab-back active" href="#tab1" data-toggle="tab">Product Management</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-tab-back" href="#tab2" data-toggle="tab">Data Management</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-tab-back" href="#tab3" data-toggle="tab">UX/UI Design</a>
-                  </li>
-                </ul>
+                  <ul class="nav nav-tabs" style="display: inline-flex;">
+                    <li class="nav-item">
+                      <a class="nav-tab-back active" href="#ProductManagement" data-toggle="tab">Product Management</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-tab-back" href="#DataManagement" data-toggle="tab">Data Management</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-tab-back" href="#UXUIDesign" data-toggle="tab">UX/UI Design</a>
+                    </li>
+                  </ul>
               </div>
                 <div class="tab-content" >
-                  <div class="tab-pane active" id="tab1" >
+                  <div class="tab-pane active" id="ProductManagement" >
                    
                     <div class="row" style="padding-top: 50px;">
                       <div class="col-md-6">
@@ -164,7 +161,7 @@
                     </div>
                   </div>
                   
-                  <div class="tab-pane" id="tab2">
+                  <div class="tab-pane" id="DataManagement">
                     
                   
                 <div class="row"style="padding-top: 50px;">
@@ -219,25 +216,8 @@
                   </div>
 
 
-                  <div class="tab-pane" id="tab3"> 
-               
-                <div class="row"style="padding-top: 50px;" id="vend">
-                  <div class="col-md-6">
-                    <img src="img/vendimage.PNG" width="60%" class="SharediPadimg" />
-                  </div>
-                  <div class="col-md-6">
-                    <h3 class="projName">
-                      Virtual Vending Machine
-                    </h3>
-                    <p class="projDesc">
-                      Functional Java GUI vending machine that stores limited number of products, rejects items out of stock, takes in payment, gives change, stores money, and vends selected items. If the machine runs out of change or snacks, contact the machine operator!
-                    </p>
-                    <a type="button" class="btn2" href="/project-pages/Vending.html" style="margin-left: 20px;margin-bottom: 20px;">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-                     <div class="row"style="padding-top: 50px;">
+                  <div class="tab-pane" id="UXUIDesign"> 
+                <div class="row"style="padding-top: 50px;">
                   <div class="col-md-6">
                     <img src="img/widgieimg.png" width="62%" class="SharediPadimg" />
                   </div>
@@ -249,6 +229,22 @@
                       A Java application consisting of widgets that organize and manage a student's tasks.
                     </p>
                     <a type="button" class="btn2" href="/project-pages/Widgie.html" style="margin-left: 20px;">
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+                <div class="row"style="padding-top: 50px;" id="vend">
+                  <div class="col-md-6">
+                    <img src="img/vendimage.PNG" width="60%" class="SharediPadimg" />
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="projName">
+                      Virtual Vending Machine
+                    </h3>
+                    <p class="projDesc">
+                      Functional Java GUI vending machine that stores limited number of products, rejects items out of stock, takes in two kinds of payments, gives change, stores money, and vends selected items.
+                    </p>
+                    <a type="button" class="btn2" href="/project-pages/Vending.html" style="margin-left: 20px;margin-bottom: 20px;">
                       Learn More
                     </a>
                   </div>
@@ -518,6 +514,29 @@ function SlideShow(n) {
   slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
 } 
+
+function showTabFromHash() {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetTab = $('.nav-tabs a[href="' + hash + '"]');
+      if (targetTab.length) {
+        targetTab.tab('show');
+      }
+    }
+  }
+
+  // When a tab is clicked, update the URL hash
+  $('.nav-tabs a').on('shown.bs.tab', function (e) {
+    const targetHash = $(e.target).attr('href'); // Get the href of the clicked tab
+    history.replaceState(null, null, targetHash); // Update the URL without refreshing the page
+  });
+
+  // Initialize tabs on page load
+  showTabFromHash();
+
+  // Handle back/forward navigation
+  $(window).on('hashchange', showTabFromHash);
+
     </script>
   </body>
 </html>
